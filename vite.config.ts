@@ -16,6 +16,10 @@ export default defineConfig((config) => {
     build: {
       target: 'esnext',
     },
+    server: {
+      host: true,
+      allowedHosts: ['totus-boltdiy.kruxlo.easypanel.host'], // 👈 Añade esta línea
+    },
     plugins: [
       nodePolyfills({
         include: ['buffer', 'process', 'util', 'stream'],
